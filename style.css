@@ -1,25 +1,98 @@
-/* style.css */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    color: #41A3CD;
+}
+
+/* Header */
 header {
-    background-color: #333;
+    background-color: #41A3CD;
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
-footer {
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    color: #94C247;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+}
+
+.section-about {
+    background-color: #fff;
+}
+
+.section-services {
+    background-color: #41A3CD;
+    color: white;
+}
+
+.section-team {
+    background-color: #94C247;
+    color: white;
+}
+
+h2 {
     text-align: center;
-    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
     background-color: #333;
     color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #94C247;
+}
+
+footer a:hover {
+    color: #41A3CD;
 }
