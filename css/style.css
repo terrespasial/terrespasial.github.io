@@ -329,6 +329,8 @@ nav {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 .team-member h3 {
