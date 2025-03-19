@@ -41,6 +41,7 @@ nav {
 
 .nav-list a {
     color: black;
+    font-size: 1rem;
 }
 
 .nav-list a:hover {
