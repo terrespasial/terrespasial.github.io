@@ -336,12 +336,16 @@ nav {
 .team-member h3 {
     color: #94C247; /* secondary color for team member names */
     margin-bottom: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .team-member p {
     margin-top: 0;
     color: #777;
     font-size: 1rem;
+    max-width: 100%;
+    height: auto;
 }
 
 
