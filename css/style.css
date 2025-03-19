@@ -39,6 +39,14 @@ nav {
     z-index: 10;
 }
 
+.nav-list a {
+    color: black;
+}
+
+.nav-list a:hover {
+    color: #94C247;
+}
+
 .hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/2.jpg');
     background-size: cover;
@@ -329,6 +337,8 @@ nav {
     justify-content: space-around;
     margin-top: 30px;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin: 0% 10%;
+    margin-top: 30px;
 }
 
 .team-member {
@@ -394,7 +404,7 @@ padding: 0 10px;
 footer .col-12 {
 flex: 0 0 100%;
 max-width: 100%;
-padding: 0 15px;
+padding: 0 10px;
 }
 
 footer h5 {
@@ -432,7 +442,7 @@ color: #ffffff;
 /* Styling untuk logo */
 footer img {
 width: 100%;
-max-width: 175px;
+max-width: 200px;
 height: auto;
 padding: 20px 0;
 }
@@ -483,4 +493,14 @@ footer h5 {
 footer p {
     font-size: 12px;
 }
+}
+
+/* <!-- Sosial Media Section --> */
+ul li a svg {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+ul li a:hover svg {
+    transform: scale(1.1); /* Membesarkan ikon saat hover */
+    filter: brightness(1.2); /* Menambahkan efek pencahayaan saat hover */
 }
