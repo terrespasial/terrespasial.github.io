@@ -207,6 +207,18 @@ nav {
     box-shadow: 0 0 30px #94C247;
 }
 
+@media (max-width: 768px) {
+    .service-item1,
+    .service-item2,
+    .service-item3,
+    .service-item4,
+    .service-item5,
+    .service-item6
+     {
+        width: 100%;
+    }
+}
+
 /* Vision and Mission Section */
 .section-vision-mission {
     padding: 50px 20px;
