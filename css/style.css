@@ -5,6 +5,7 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 a {
@@ -50,11 +51,9 @@ nav {
 }
 
 .hero-section .overlay {
-    position: absolute;
-    top: 250px;
-    padding: 20px;
     width: 100%;
     height: 40px;
+    padding: 10% 0;
 }
 
 .hero-section .hero-text h2 {
@@ -220,7 +219,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 35%;
+    height: 40%;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1; /* Menjaga layer di bawah teks, di atas background */
 }
@@ -345,28 +344,143 @@ nav {
 }
 
 .team-member h3 {
-    margin-top: 10px;
     color: #94C247; /* secondary color for team member names */
+    margin-bottom: 0;
 }
 
 .team-member p {
+    margin-top: 0;
     color: #777;
     font-size: 1rem;
 }
 
-/* Footer Section */
+
+/* Style untuk footer */
 footer {
-    background-color: #41A3CD;
+    background-color: #181818;
     color: white;
     text-align: center;
-    padding: 20px;
-}
-
-footer a {
+    padding: 40px 0;
+  }
+  
+footer p {
     color: #fff;
     font-weight: 700;
 }
 
-footer a:hover {
+footer p:hover {
     color: #94C247; /* Change to secondary color on hover */
+}
+
+/* Kontainer footer */
+footer .container {
+max-width: 1140px;
+margin: 0 auto;
+}
+
+/* Mengatur layout dengan grid system */
+footer .row {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+footer .col-md-3 {
+flex: 0 0 25%;
+max-width: 20%;
+padding: 0 10px;
+}
+
+footer .col-12 {
+flex: 0 0 100%;
+max-width: 100%;
+padding: 0 15px;
+}
+
+footer h5 {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+footer p {
+font-size: 14px;
+color: #555;
+}
+
+/* Styling untuk list sosial media */
+footer .col-md-3 ul {
+list-style-type: none;
+padding: 0;
+}
+
+footer .col-md-3 ul li {
+margin-bottom: 8px;
+}
+
+footer .col-md-3 ul li a {
+text-decoration: none;
+color: #007bff;
+font-size: 14px;
+transition: color 0.3s;
+}
+
+footer .col-md-3 ul li a:hover {
+color: #ffffff;
+}
+
+/* Styling untuk logo */
+footer img {
+width: 100%;
+max-width: 175px;
+height: auto;
+padding: 20px 0;
+}
+
+/* Styling untuk hak cipta dan tautan legal */
+footer .col-12.text-center p:last-child {
+font-size: 14px;
+color: #777;
+}
+
+footer .col-12.text-center p:last-child a {
+text-decoration: none;
+color: #777;
+transition: color 0.3s;
+}
+
+footer .col-12.text-center p:last-child a:hover {
+color: #0056b3;
+}
+
+/* Responsivitas: Mengubah layout pada perangkat kecil */
+@media (max-width: 768px) {
+footer .col-md-3 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 20px;
+}
+
+footer .col-md-3 ul li a {
+    font-size: 16px;
+}
+}
+
+@media (max-width: 480px) {
+footer .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+footer .col-md-3 ul li a {
+    font-size: 18px;
+}
+
+footer h5 {
+    font-size: 16px;
+}
+
+footer p {
+    font-size: 12px;
+}
 }
