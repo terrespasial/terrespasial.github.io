@@ -170,6 +170,17 @@ nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/n-service6.jpg');
 }
 
+
+.service-item1 img,
+.service-item2 img,
+.service-item3 img,
+.service-item4 img,
+.service-item5 img,
+.service-item6 img {
+    max-width: 100%;
+    height: auto;
+  }
+
 .service-item1::before,
 .service-item2::before,
 .service-item3::before,
