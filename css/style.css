@@ -352,12 +352,12 @@ footer {
     background-color: #181818;
     color: white;
     text-align: center;
-    padding: 40px 0;
-  }
-  
+    padding: 4rem 0; /* Menggunakan rem untuk ukuran yang lebih fleksibel */
+}
+
 footer p {
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 footer p:hover {
@@ -366,118 +366,114 @@ footer p:hover {
 
 /* Kontainer footer */
 footer .container {
-max-width: 1140px;
-margin: 0 auto;
+    margin: 0 auto;
+    padding: 0 1rem; /* Memberikan padding agar lebih responsif */
 }
 
 /* Mengatur layout dengan grid system */
 footer .row {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+/* Kolom untuk perangkat besar dan menengah */
 footer .col-md-3 {
-flex: 0 0 25%;
-max-width: 20%;
-padding: 0 10px;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 1rem; /* Padding yang responsif */
 }
 
+/* Kolom penuh untuk perangkat kecil */
 footer .col-12 {
-flex: 0 0 100%;
-max-width: 100%;
-padding: 0 10px;
+    max-width: 100%;
+    padding: 0 1rem; /* Padding yang responsif */
 }
 
 footer h5 {
-font-size: 18px;
-font-weight: bold;
-margin-bottom: 15px;
+    font-size: 1.125rem; /* Gunakan rem untuk ukuran font yang lebih fleksibel */
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* Menggunakan margin yang lebih fleksibel */
 }
 
 footer p {
-font-size: 14px;
-color: #555;
+    font-size: 1rem; /* Gunakan rem untuk ukuran font */
+    color: #bdbdbd;
 }
 
 /* Styling untuk list sosial media */
 footer .col-md-3 ul {
-list-style-type: none;
-padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 footer .col-md-3 ul li {
-margin-bottom: 8px;
+    margin-bottom: 1rem; /* Menambahkan margin bawah untuk jarak antar list */
 }
 
 footer .col-md-3 ul li a {
-text-decoration: none;
-color: #007bff;
-font-size: 14px;
-transition: color 0.3s;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem; /* Ukuran font responsif */
+    transition: color 0.3s;
 }
 
 footer .col-md-3 ul li a:hover {
-color: #ffffff;
+    color: #ffffff;
 }
 
 /* Styling untuk logo */
 footer img {
-width: 100%;
-max-width: 200px;
-height: auto;
-padding: 20px 0;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding: 2rem 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 /* Styling untuk hak cipta dan tautan legal */
 footer .col-12.text-center p:last-child {
-font-size: 14px;
-color: #777;
+    font-size: 1rem;
+    color: #bdbdbd;
 }
 
-footer .col-12.text-center p:last-child a {
-text-decoration: none;
-color: #777;
-transition: color 0.3s;
-}
+/* Responsivitas: Mengubah layout pada perangkat lebih kecil */
 
-footer .col-12.text-center p:last-child a:hover {
-color: #0056b3;
-}
-
-/* Responsivitas: Mengubah layout pada perangkat kecil */
+/* Tablet (max-width 768px) */
 @media (max-width: 768px) {
-footer .col-md-3 {
-    flex: 0 0 48%;
-    max-width: 48%;
-    margin-bottom: 20px;
+    footer .col-md-3 {
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-bottom: 1.5rem; /* Menambahkan margin bawah pada kolom */
+    }
+
+    footer .col-md-3 ul li a {
+        font-size: 1.1rem; /* Ukuran font sedikit lebih besar untuk tablet */
+    }
 }
 
-footer .col-md-3 ul li a {
-    font-size: 16px;
-}
-}
-
+/* Mobile (max-width 480px) */
 @media (max-width: 480px) {
-footer .col-md-3 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    footer .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1.5rem; /* Memberikan jarak antar kolom */
+    }
+
+    footer .col-md-3 ul li a {
+        font-size: 1.2rem; /* Ukuran font lebih besar pada perangkat kecil */
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
 }
 
-footer .col-md-3 ul li a {
-    font-size: 18px;
-}
-
-footer h5 {
-    font-size: 16px;
-}
-
-footer p {
-    font-size: 12px;
-}
-}
-
-/* <!-- Sosial Media Section --> */
+/* Sosial Media Section */
 ul li a svg {
     transition: transform 0.3s, filter 0.3s;
 }
