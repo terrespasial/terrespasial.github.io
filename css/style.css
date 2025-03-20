@@ -129,7 +129,7 @@ nav {
     justify-content: space-around;
     margin-top: 30px;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     margin: 0% 10%;
 }
 
@@ -144,7 +144,7 @@ nav {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
     transition: all 0.3s ease-in-out;
     background-size: cover;
     background-position: center;
@@ -180,7 +180,20 @@ nav {
 .service-item6 img {
     max-width: 100%;
     height: auto;
+    max-height: 40px;
+    top: 0;
   }
+
+.service-item1 p,
+.service-item2 p,
+.service-item3 p,
+.service-item4 p,
+.service-item5 p,
+.service-item6 p {
+    margin-top: 3rem;
+    color: #f4f4f4;
+    padding: 1rem;
+}
 
 .service-item1::before,
 .service-item2::before,
@@ -194,7 +207,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 35%;
+    height: 17%;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1; /* Menjaga layer di bawah teks, di atas background */
 }
@@ -352,7 +365,7 @@ footer {
     background-color: #181818;
     color: white;
     text-align: center;
-    padding: 4rem 0; /* Menggunakan rem untuk ukuran yang lebih fleksibel */
+    padding: 2rem 1rem; /* Menggunakan rem untuk ukuran yang lebih fleksibel */
 }
 
 footer p {
