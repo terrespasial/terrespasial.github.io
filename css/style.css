@@ -39,6 +39,12 @@ nav {
     z-index: 10;
 }
 
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
 .nav-list a {
     color: black;
     font-size: 1rem;
@@ -46,6 +52,47 @@ nav {
 
 .nav-list a:hover {
     color: #94C247;
+}
+
+
+/* Hamburger Icon (Mobile Menu Button) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* For Mobile - Show the hamburger icon and hide the nav list */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; /* Hide nav list on mobile */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .nav-list.show {
+        display: flex; /* Show the nav list when toggled */
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
 }
 
 .hero-section {
@@ -435,7 +482,7 @@ footer .col-md-3 ul li a:hover {
     color: #ffffff;
 }
 
-/* Styling untuk logo */
+/* Styling untuk logo bawah */
 footer img {
     width: 100%;
     max-width: 200px;
