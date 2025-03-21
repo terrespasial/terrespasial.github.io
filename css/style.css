@@ -181,7 +181,7 @@ nav {
     margin-top: 30px;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 0% 5%;
+    margin: 0% 10%;
 }
 
 .service-item1,
@@ -314,6 +314,7 @@ nav {
     font-size: 1.1rem;
     color: #555;
     margin-top: 20px;
+    padding: 0% 10%;
 }
 
 .mission-priorities {
