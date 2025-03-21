@@ -395,13 +395,13 @@ nav {
 .team-member h3 {
     color: #94C247; /* secondary color for team member names */
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .team-member p {
     margin-top: 0;
     color: #777;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 
