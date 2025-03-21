@@ -90,7 +90,7 @@ nav {
     }
 
     .logo {
-        margin-left: 3rem;
+        margin-left: 4rem;
     }
 }
 
@@ -390,18 +390,21 @@ nav {
     margin-bottom: 10px;
     max-width: 100%;
     height: auto;
+    position: center;
 }
 
 .team-member h3 {
     color: #94C247; /* secondary color for team member names */
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
 }
 
 .team-member p {
-    margin-top: 15%;
+    margin-top: 7px;
     color: #777;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 
